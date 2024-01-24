@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ViewModule } from './components/view/view.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
+// import { ViewComponent } from './components/view/view.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarouselComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
